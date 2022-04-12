@@ -54,7 +54,7 @@ void Print_ReverseData(element a[], int n)
 void PushDown(element a[], int n, int root)
 {
     if (root < n )
-    {
+    { 
         int left_child = 2 * root + 1;
         int right_child = 2 * root + 2;
         if (left_child < n)
@@ -89,7 +89,7 @@ void HeapSort(element a[], int n)
     for (int i = n - 1; i >= 2; i--)
     {
         Swap(&a[0], &a[i]);
-        PushDown(a, i, 0);
+        PushDown(a,  i, 0);
     }
     Swap(&a[0], &a[1]);
 }
